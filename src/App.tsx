@@ -9,7 +9,7 @@ function App() {
 	const [error, setError] = useState<null | StatResponse['error']>(null)
 	const [selectedRegion, setSelectedRegion] = useState<number>(0)
 
-	const WS_URL = 'ws://localhost:3000'
+	const WS_URL = process.env.CATVASION_WEBSOCKET_URL as string
 
 	const { lastJsonMessage } = useWebSocket(WS_URL, {
 		shouldReconnect: () => true,
