@@ -1,5 +1,5 @@
 import { createContext } from 'react'
-import { AppContext } from '../types/index'
+import { AppContextInterface } from '../types/index'
 
-const AppContext = createContext<undefined | AppContext>(undefined)
+const AppContext = createContext<undefined | AppContextInterface>(undefined)
 export default AppContext

@@ -20,7 +20,7 @@ export interface StatResponse {
 	} | null
 }
 
-export interface AppContext {
+export interface AppContextInterface {
 	setSelectedRegion: React.Dispatch<React.SetStateAction<number>>
 	selectedRegion: number
 	data: StatResponse['data']
