@@ -19,3 +19,10 @@ export interface StatResponse {
 		message: string
 	} | null
 }
+
+export interface AppContext {
+	setSelectedRegion: React.Dispatch<React.SetStateAction<number>>
+	selectedRegion: number
+	data: StatResponse['data']
+	error: StatResponse['error']
+}
