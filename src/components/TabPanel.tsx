@@ -7,11 +7,11 @@ const TabPanel = () => {
 		return <></>
 	}
 	return (
-		<div className='flex gap-4 flex-col sm:flex-row'>
+		<section className='flex flex-col flex-wrap sm:flex-row sm:gap-4'>
 			{appState.data?.map((region, index) => (
 				<Tab tabIndex={index} region={region.region} status={region.status} />
 			))}
-		</div>
+		</section>
 	)
 }
 
