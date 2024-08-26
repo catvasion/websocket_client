@@ -27,19 +27,22 @@ This project is a simple WebSocket client built as part of a technical test. The
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/websocket-client.git
+   git clone https://github.com/catvasion/websocket-client.git
    cd websocket-client
 
    ```
 
 2. **Install the dependencies**:
+
    ```
    npm install
 
    ```
+
 3. **Running the App**:
    To start the app in development mode, run:
    ```
    npm run dev
+   ```
 
 Thanks for checking out this WebSocket client project!
