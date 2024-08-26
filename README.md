@@ -1,5 +1,7 @@
 # WebSocket Client
 
+[Live Demo](https://live-stats-catvasion.netlify.app/)
+
 This project is a simple WebSocket client built as part of a technical test. The client connects to a WebSocket server, receives new data every minute, and displays it in the web browser. The app is created using React, Vite, TypeScript, and Tailwind CSS.
 
 ## Features
