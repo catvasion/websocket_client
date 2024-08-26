@@ -11,3 +11,11 @@ export interface Stat {
 	region: string
 	status: string
 }
+
+export interface StatResponse {
+	data: Stat[] | null
+	error: {
+		code: number
+		message: string
+	} | null
+}

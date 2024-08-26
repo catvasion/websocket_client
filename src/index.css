@@ -8,6 +8,9 @@
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
 }
+.title {
+	@apply font-sans text-newblack font-normal lg:text-[30px] text-[20px];
+}
 .body {
 	@apply font-sans text-newblack font-normal lg:text-[28px] text-[18px];
 }
