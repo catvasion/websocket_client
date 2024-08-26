@@ -17,7 +17,7 @@ const Tab = ({
 	const ifActive = appState.selectedRegion === tabIndex
 	return (
 		<div
-			className={`bg-white p-3 rounded-lg my-6 flex items-center gap-1 ${
+			className={`bg-white p-3 rounded-lg my-2 flex items-center justify-between gap-1 ${
 				ifActive ? 'outline-purple-400 outline-double shadow-lg' : 'shadow-sm'
 			}`}
 			onClick={() => appState.setSelectedRegion(tabIndex)}
@@ -26,11 +26,7 @@ const Tab = ({
 			<p>{region}</p>
 
 			<CircleIcon
-				className={
-					status === 'ok'
-						? 'text-green-500 material-icons'
-						: 'text-red-500 material-icons'
-				}
+				className={status === 'ok' ? 'text-green-500 ' : 'text-red-500 '}
 			/>
 		</div>
 	)

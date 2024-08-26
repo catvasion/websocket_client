@@ -9,11 +9,11 @@
 	font-family: 'Poppins', sans-serif;
 }
 .title {
-	@apply font-sans text-newblack font-normal lg:text-[30px] text-[20px];
+	@apply font-sans text-newblack font-normal lg:text-[22px] text-[18px];
 }
 .body {
-	@apply font-sans text-newblack font-normal lg:text-[28px] text-[18px];
+	@apply font-sans text-newblack font-normal lg:text-[20px] text-[16px];
 }
 .subtitle {
-	@apply font-sans text-subtitle font-normal lg:text-[26px] text-[16px];
+	@apply font-sans text-subtitle font-normal lg:text-[20px] text-[16px];
 }

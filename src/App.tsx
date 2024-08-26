@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import useWebSocket from 'react-use-websocket'
 import { StatResponse, Stat } from './types'
-import { Loading, Error, TabPanel } from './components'
+import { Loading, Error, TabPanel, CardPanel } from './components'
 import AppContext from './context'
 
 function App() {
@@ -32,7 +32,16 @@ function App() {
 			}}
 		>
 			<main className='bg-violet-100 min-h-screen p-10'>
-				{error ? <Error /> : data === null ? <Loading /> : <TabPanel />}
+				{error ? (
+					<Error />
+				) : data === null ? (
+					<Loading />
+				) : (
+					<article>
+						<TabPanel />
+						<CardPanel />
+					</article>
+				)}
 			</main>
 		</AppContext.Provider>
 	)
